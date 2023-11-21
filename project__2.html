@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="project__2.css" />
+    <link rel="stylesheet" href="project_2_media.css" /> 
+  </head>
+  <body class="light-mode">
+    <nav id="desktop-nav">
+      <div class="logo">Jahnavi Uppugandla</div>  
+      <div>
+        <ul class="nav-links" class="dark-mode-update">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul> 
+      </div>   
+      <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Mode</button>
+    </nav>
+    <nav id="hamburger-nav">            
+      <div class="logo">Jahnavi Uppugandla</div> 
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile"> 
+        
+      <div class="section__pic-container" onclick="toggleInfoBox()">
+        <div id="info-box">
+            <!-- Additional information goes here -->
+            <ul>
+                <li>I am currently learning to code efficiently and understanding the problem solving skill.</li>
+                <li>I like to learn more about mind, body interconnection.</li>
+                <li>I like to watch movies and read books.</li>
+            </ul>
+            <button onclick="closeInfoBox()">Close</button>
+        </div>
+        <div class="section-container">
+            <div class="section__pic-container">
+              <img src="profile_pic.jpg" alt="Profile picture" class="about-pic">
+            </div>
+        </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jahnavi Uppugandla</h1>
+        <!--<p class="section__text__p2">Frontend Developer</p>--> 
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('RESUME_Jahnavi Uppugandla.pdf')"
+          >
+            Download Resume
+          </button>
+        </div>
+      </div>  
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>                                                           
+                Hello! I'm currently on an exhilarating journey, pursuing my masters in computer science, 
+                and I'm passionate about applying my skills to tackle real-world challenges with innovative solutions.
+                My enthusiasm for learning extends to embracing new technologies, and I'm on the lookout for opportunities 
+                to further expand my knowledge.<br><br>
+
+                <strong>Key Expertise:</strong><br>
+                <strong> Problem Solving:</strong>  I thrive on unraveling complex problems and finding effective solutions.<br>
+                <strong>Critical Thinking:</strong> I approach challenges with a sharp and analytical mind, always seeking the most efficient pathways.<br>
+                <strong>Active Listening:</strong>  Understanding the nuances of a problem is crucial, and active listening is a skill I prioritize in every interaction.<br>
+                <strong>Adaptability:</strong>      In the dynamic landscape of technology, I bring a flexible mindset to adapt to evolving scenarios.<br>
+                <strong>Emotional Intelligence:</strong>  I value the human aspect of problem-solving, recognizing the importance of empathy and collaboration.<br>
+            </p>
+          </div>
+        </div>
+    </section>
+    <section id="education"> 
+      <p class="section__text__p1"></p>
+      <h1 class="title">Education</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <ul id="education"> 
+                <li>Passed out year: 2017</li>
+                <li>CGPA: 9.7/10</li>
+              </ul>
+            </div>
+            <h2 class="experience-sub-title project-title">Schooling</h2>  
+          </div>                        
+          <div class="details-container color-container">
+            <div class="article-container">
+                <ul>
+                    <li>Passed out year: 2019</li>
+                    <li>CGPA: 9.94/10</li>
+                </ul>
+            </div>
+            <h2 class="experience-sub-title project-title">Intermediate</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+                <ul>
+                    <li>Passed out year: 2023</li>
+                    <li>CGPA: 9.3/10</li>
+                </ul>
+            </div>
+            <h2 class="experience-sub-title project-title">Undergraduation</h2>
+          </div> 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <ul>
+                <li>Passing out Year: May 2025</li>
+              </ul>
+            </div>
+            <h2 class="experience-sub-title project-title">Masters</h2>
+          </div>  
+        </div>
+      </div> 
+    </section>  
+    <section id="experience">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Experience</h1>
+        <h3>I have no work experience from any organization. (I  completed my bachelors in 2023)</h3>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Skills Learnt (during my under undergraduation)</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++  </h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+      </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1> 
+      <section class="frm">
+        <form name="submit-to-google-sheet">
+        <label>Name:</label>
+        <input type="text" name="name"><br><br>
+        <label>Email:</label> 
+        <input type="email" name="email"> <br><br>
+        <label>Message</label>
+        <textarea name="message" cols="20"> 
+
+</textarea> <br><br> 
+        <input type="submit" name="submit">  
+
+        <span id="success"></span>
+    </form>   
+    </section>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:exampleemail@gmail.com">jaahnavi0113@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jahnavi Uppugandla. All Rights Reserved.</p>
+    </footer>
+    <script src="project__2.js"></script>
+  </body>
+</html>
